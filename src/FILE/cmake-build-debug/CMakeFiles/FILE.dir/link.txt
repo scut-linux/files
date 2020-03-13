@@ -1,0 +1,1 @@
+/usr/local/arm/bin/arm-linux-gnueabihf-gcc -g   CMakeFiles/FILE.dir/lowlevel.c.o CMakeFiles/FILE.dir/std.c.o CMakeFiles/FILE.dir/main.c.o  -o FILE 
