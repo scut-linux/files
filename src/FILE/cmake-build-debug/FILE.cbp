@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FILE"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FILE">
+				<Option output="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/FILE" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/arm/bin/../lib/gcc/arm-linux-gnueabihf/7.4.1/include"/>
+					<Add directory="/usr/local/arm/bin/../lib/gcc/arm-linux-gnueabihf/7.4.1/include-fixed"/>
+					<Add directory="/usr/local/arm/bin/../lib/gcc/arm-linux-gnueabihf/7.4.1/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/usr/local/arm/bin/../arm-linux-gnueabihf/libc/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 FILE"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FILE/fast">
+				<Option output="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/FILE" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/arm/bin/../lib/gcc/arm-linux-gnueabihf/7.4.1/include"/>
+					<Add directory="/usr/local/arm/bin/../lib/gcc/arm-linux-gnueabihf/7.4.1/include-fixed"/>
+					<Add directory="/usr/local/arm/bin/../lib/gcc/arm-linux-gnueabihf/7.4.1/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/usr/local/arm/bin/../arm-linux-gnueabihf/libc/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 FILE/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/env.c">
+			<Option target="FILE"/>
+		</Unit>
+		<Unit filename="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/limit.c">
+			<Option target="FILE"/>
+		</Unit>
+		<Unit filename="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/lowlevel.c">
+			<Option target="FILE"/>
+		</Unit>
+		<Unit filename="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/main.c">
+			<Option target="FILE"/>
+		</Unit>
+		<Unit filename="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/opt.c">
+			<Option target="FILE"/>
+		</Unit>
+		<Unit filename="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/slog.c">
+			<Option target="FILE"/>
+		</Unit>
+		<Unit filename="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/std.c">
+			<Option target="FILE"/>
+		</Unit>
+		<Unit filename="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/tim.c">
+			<Option target="FILE"/>
+		</Unit>
+		<Unit filename="/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
