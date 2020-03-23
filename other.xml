@@ -1,8 +1,0 @@
-<application>
-  <component name="CPPToolchains" version="2">
-    <toolchains detectedVersion="5">
-      <toolchain name="imx6ul" customCCompilerPath="/usr/local/arm/bin/arm-linux-gnueabihf-gcc" customCXXCompilerPath="/usr/local/arm/bin/arm-linux-gnueabihf-g++" debuggerKind="BUNDLED_GDB" />
-      <toolchain name="pc" debuggerKind="BUNDLED_GDB" />
-    </toolchains>
-  </component>
-</application>
