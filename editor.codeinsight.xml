@@ -1,6 +1,6 @@
 <application>
   <component name="CodeInsightSettings">
     <option name="SHOW_PARAMETER_NAME_HINTS_ON_COMPLETION" value="true" />
-    <option name="PARAMETER_INFO_DELAY" value="200" />
+    <option name="PARAMETER_INFO_DELAY" value="20" />
   </component>
 </application>
