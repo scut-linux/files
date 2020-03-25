@@ -12,7 +12,14 @@ extern void test_env(int argc,char*argv[]);
 extern void time_0();
 extern void test_log();
 extern void test_rlimit();
-int main(int argc,char*argv[])
+extern void test_terminal_rw();
+extern void test_termios();
+extern  void test_malloc();
+extern void test_lock();
+extern void test_fcntl();
+extern  void test_tfcntl();
+extern  void test_dbm();
+        int main(int argc,char*argv[])
 {
     //lowlevel();
     //test_getopt(argc,argv);
@@ -20,7 +27,13 @@ int main(int argc,char*argv[])
     //test_env(argc,argv);
     //time_0();
     //test_log();
-    test_rlimit();
-
+    //test_rlimit();
+    //test_terminal_rw();
+    //test_termios();
+    //test_malloc();
+    //test_lock();
+    //test_fcntl();
+    //test_tfcntl();
+    test_dbm();
     exit(0);
 }
