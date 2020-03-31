@@ -6,9 +6,10 @@ include_directories(/opt/arm/gdbm/include)
 link_directories(/opt/arm/gdbm/lib)
 
 
-add_executable(FILE lowlevel.c std.c main.c opt.c env.c tim.c slog.c limit.c terminal.c termios.c curses.c memory.c lock.c dbm.c thread.c signal.c)
+add_executable(FILE lowlevel.c std.c main.c opt.c env.c tim.c slog.c limit.c terminal.c termios.c curses.c memory.c lock.c dbm.c program.c signal.c thread.c)
 
 target_link_libraries(${PROJECT_NAME} m)
+target_link_libraries(${PROJECT_NAME} pthread)
 target_link_libraries(${PROJECT_NAME} gdbm)
 target_link_libraries(${PROJECT_NAME} gdbm_compat)
 

@@ -1,61 +1,68 @@
 //
-// Created by kaihua on 3/25/20.
+// Created by kaihua on 3/31/20.
 //
 
-//使用system启动
-#include <stdlib.h>
 #include <stdio.h>
-
-void test_system() {
-    printf("Running ps with system\n");
-    //system("ps ax");//前台进程
-    system("ps ax &");//后台进行
-    printf("Done.\n");
-    exit(EXIT_SUCCESS);
-}
-
-
 #include <unistd.h>
-#include <sys/wait.h>
+#include <string.h>
+#include <pthread.h>
+#include <stdlib.h>
 
-void test_fork() {
-    int n = 0;
-    pid_t pid;
-    char *message = NULL;
-    int exit_code = 0;
-    switch ((pid = fork())) {
-        case -1:
-            fprintf(stderr, "Fork() Error.\n");
-            break;
-        case 0:
-            message = "Child";
-            n = 5;
-            exit_code = 123;
-            break;
-        default:
-            message = "Parent";
-            exit_code = 456;
-            n = 3;
-            break;
+char message[] = "Hello world";
+
+//线程函数　
+void *thread_function(void *arg) {
+    //使能取消
+    if (pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL) != 0) {
+        perror("thread pthread_setcancelstate failed.\n");
+        exit(EXIT_FAILURE);
+    }
+    //设置取消方式
+    //DEFERRED : 推迟,直到 pthread_join,pthread_cond_wait,pthread_cond_timewait,pthread_testcancel sem_wait or sigwait
+    //PTHREAD_CANCEL_ASYNCHRONOUS :立即执行
+    if (pthread_setcanceltype(PTHREAD_CANCEL_DEFERRED, NULL) != 0) {
+        perror("thread thread_setcanceltype failed.\n");
+        exit(EXIT_FAILURE);
     }
 
-    for (int i = 0; i < n; ++i) {
-        printf("%s\n",message);
+    printf("thread_function is running .Argument was %s\n", (char *) arg);
+    for (int i = 0; i < 10; ++i) {
+        printf("thread_function is still running.\n");
         sleep(1);
     }
+    //strcpy(message, "Byte");
+    //pthread_exit("Thank you for the CPU time");
+    pthread_exit(0);
+}
 
-    //等待子进程退出
-    if (pid != 0) {
-        int stat;
-        pid_t child_pid = wait(&stat);//等待子进程退出，并返回子进程的状态码stat
-        printf("Child has finished with pid=%d\n", child_pid);
-        if (WIFEXITED(stat)) {//判断是不是正常退出　
-            printf("Child exited with code=%d\n", WEXITSTATUS(stat));
-        } else {
-            printf("Child terminated abnormally.\n");
-        }
+//测试
+void test_thread() {
+    pthread_t a_pthread;
+    void *thread_result;
+
+    //创建线程
+    if (pthread_create(&a_pthread, NULL, thread_function, (void *) message) != 0) {
+        perror("Thread creation failed");
+        exit(EXIT_FAILURE);
+    }
+    //取消线程
+    sleep(1);
+    printf("Canceling ...\n");
+    if(pthread_cancel(a_pthread)!=0){
+        perror("Thead cancelation failed.\n");
+        printf("FAIL\n");
+        exit(EXIT_FAILURE);
     }
 
-    printf("%s begins exit with code=%d.\n",message,exit_code);
-    exit(exit_code);
+    //等待线程完成
+    printf("waiting ......");
+    if (pthread_join(a_pthread, &thread_result) != 0) {
+        perror("thread join failed");
+        exit(EXIT_FAILURE);
+    }
+
+    //打印返回结果
+    //printf("Thread joined. it returned =%s\n", (char *) thread_result);
+    //printf("Message is now=%s\n", message);
+    exit(EXIT_SUCCESS);
 }

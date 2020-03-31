@@ -22,6 +22,8 @@ extern  void test_dbm();
 extern  void test_system();
 extern void test_fork();
 extern void test_signal();
+extern void test_sigaction();
+extern void test_thread();
 
 int main(int argc,char*argv[])
 {
@@ -41,6 +43,8 @@ int main(int argc,char*argv[])
     //test_dbm();
     //test_system();
     //test_fork();
-    test_signal();
+    //test_signal();
+    //test_sigaction();
+     test_thread();
     exit(0);
 }
