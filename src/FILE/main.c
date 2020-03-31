@@ -19,7 +19,11 @@ extern void test_lock();
 extern void test_fcntl();
 extern  void test_tfcntl();
 extern  void test_dbm();
-        int main(int argc,char*argv[])
+extern  void test_system();
+extern void test_fork();
+extern void test_signal();
+
+int main(int argc,char*argv[])
 {
     //lowlevel();
     //test_getopt(argc,argv);
@@ -34,6 +38,9 @@ extern  void test_dbm();
     //test_lock();
     //test_fcntl();
     //test_tfcntl();
-    test_dbm();
+    //test_dbm();
+    //test_system();
+    //test_fork();
+    test_signal();
     exit(0);
 }
