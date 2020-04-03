@@ -24,6 +24,10 @@ extern void test_fork();
 extern void test_signal();
 extern void test_sigaction();
 extern void test_thread();
+extern void test_thread_sem();
+extern void test_thread_mutex();
+extern  void test_rpipe();
+extern void test_wpipe();
 
 int main(int argc,char*argv[])
 {
@@ -45,6 +49,11 @@ int main(int argc,char*argv[])
     //test_fork();
     //test_signal();
     //test_sigaction();
-     test_thread();
+     //test_thread();
+    //test_thread_sem();
+    //test_thread_mutex();
+    //test_rpipe();
+    test_wpipe();
+
     exit(0);
 }
