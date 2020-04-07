@@ -47,8 +47,8 @@ void test_rlimit()
     printf("Current FSIZE limit: soft=%ld,hard=%ld\n",rl.rlim_cur,rl.rlim_max);
 
     //设置限制文件大小，再用work会失败，
-    rl.rlim_cur=2048;
-    rl.rlim_max=4096;
+    rl.rlim_cur=1024;
+    rl.rlim_max=2048;
     printf("Setting a 2k file size limit\n");
     setrlimit(RLIMIT_FSIZE,&rl);
     work();

@@ -12,6 +12,23 @@ extern void test_env(int argc,char*argv[]);
 extern void time_0();
 extern void test_log();
 extern void test_rlimit();
+extern void test_terminal_rw();
+extern void test_termios();
+extern  void test_malloc();
+extern void test_lock();
+extern void test_fcntl();
+extern  void test_tfcntl();
+extern  void test_dbm();
+extern  void test_system();
+extern void test_fork();
+extern void test_signal();
+extern void test_sigaction();
+extern void test_thread();
+extern void test_thread_sem();
+extern void test_thread_mutex();
+extern  void test_rpipe();
+extern void test_wpipe();
+
 int main(int argc,char*argv[])
 {
     //lowlevel();
@@ -20,7 +37,23 @@ int main(int argc,char*argv[])
     //test_env(argc,argv);
     //time_0();
     //test_log();
-    test_rlimit();
+    //test_rlimit();
+    //test_terminal_rw();
+    //test_termios();
+    //test_malloc();
+    //test_lock();
+    //test_fcntl();
+    //test_tfcntl();
+    //test_dbm();
+    //test_system();
+    //test_fork();
+    //test_signal();
+    //test_sigaction();
+     //test_thread();
+    //test_thread_sem();
+    //test_thread_mutex();
+    //test_rpipe();
+    test_wpipe();
 
     exit(0);
 }

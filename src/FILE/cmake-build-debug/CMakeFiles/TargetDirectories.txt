@@ -1,3 +1,0 @@
-/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/kaihua/Desktop/linux/linux-applications-4th/files/src/FILE/cmake-build-debug/CMakeFiles/FILE.dir
